@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 50px 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  border: solid transparent;
+  row-gap: 10px;
+}
+
+fieldset > legend {
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.input_normale {
+  margin-top: 20px;
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid rgb(126, 126, 126) 2px;
+}
+
+.input_normale:focus {
+  outline: none;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(126, 126, 126);
+  color: white;
+  border: solid rgb(126, 126, 126) 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  border: rgb(92, 92, 92);
+  background-color: rgb(92, 92, 92);
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  fieldset {
+    font-size: 19px;
+    width: 100%;
+  }
+
+  .input_normale {
+    width: 150px;
+  }
+
+  button {
+    width: 150px;
+  }
+}
